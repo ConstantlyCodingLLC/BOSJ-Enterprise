@@ -1,19 +1,14 @@
 <!DOCTYPE html>
+<!-- about.html -->
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About | BOSJ Enterprises</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
- <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    html, body {
-      height: 100%;
-    }
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { height: 100%; width: 100%; }
     body {
       font-family: 'Roboto', sans-serif;
       background-color: #f4f6f9;
@@ -21,6 +16,7 @@
       line-height: 1.6;
       display: flex;
       flex-direction: column;
+      min-height: 100vh;
     }
     header {
       background-color: #2c3e50;
@@ -29,13 +25,8 @@
       text-align: center;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 5px;
-    }
-    header p {
-      font-size: 1.2rem;
-    }
+    header h1 { font-size: 2.5rem; margin-bottom: 5px; }
+    header p { font-size: 1.2rem; }
     nav {
       display: flex;
       flex-wrap: wrap;
@@ -56,25 +47,24 @@
       border-radius: 4px;
       color: #ffffff;
     }
-    .hero {
-      background: #dce6f1;
-      padding: 80px 20px;
-      text-align: center;
+    .content {
       flex-grow: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-    .hero h2 {
-      font-size: 2.5rem;
-      color: #2c3e50;
-      margin-bottom: 15px;
-    }
-    .hero p {
-      font-size: 1.25rem;
-      color: #4b5563;
-      max-width: 700px;
+      padding: 40px 20px;
+      max-width: 900px;
       margin: 0 auto;
+      width: 100%;
+    }
+    .content h2 {
+      color: #2c3e50;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .content p {
+      font-size: 1.1rem;
+      color: #4b5563;
+      margin-bottom: 20px;
+      line-height: 1.8;
     }
     footer {
       background-color: #2c3e50;
@@ -82,63 +72,33 @@
       text-align: center;
       padding: 20px;
     }
-    @media (max-width: 1024px) {
-      header h1 {
-        font-size: 2.2rem;
-      }
-      .hero h2 {
-        font-size: 2rem;
-      }
-    }
     @media (max-width: 768px) {
-      header h1 {
-        font-size: 2rem;
-      }
-      .hero h2 {
-        font-size: 1.6rem;
-      }
-      .hero p {
-        font-size: 1rem;
-      }
-      nav {
-        gap: 15px;
-      }
+      header h1 { font-size: 2rem; }
+      .content h2 { font-size: 1.6rem; }
+      .content p { font-size: 1rem; }
     }
     @media (max-width: 480px) {
-      nav {
-        flex-direction: column;
-        align-items: center;
-      }
-      header h1 {
-        font-size: 1.8rem;
-      }
-      .hero h2 {
-        font-size: 1.3rem;
-      }
-      .hero p {
-        font-size: 0.95rem;
-      }
+      nav { flex-direction: column; align-items: center; }
+      header h1 { font-size: 1.8rem; }
+      .content h2 { font-size: 1.3rem; }
     }
   </style>
-
 </head>
 <body>
   <header>
     <h1>BOSJ Enterprises</h1>
     <p>Professional Tax & Accounting Consultants</p>
   </header>
-
   <nav>
     <a href="index.html">Home</a>
     <a href="services.html">Services</a>
     <a href="contact.html">Contact</a>
   </nav>
-
-  <section class="section">
-    <h3>About Us</h3>
-    <p>BOSJ Enterprise offers expert tax preparation, bookkeeping, and financial consulting tailored to your needs. With years of industry experience and a focus on personalized service, we are your trusted partners in financial success.</p>
+  <section class="content">
+    <h2>About BOSJ Enterprises</h2>
+    <p>At BOSJ Enterprises, we are committed to providing high-quality tax and accounting services to both individuals and businesses. With years of experience in the financial sector, our team works closely with clients to help them make informed and confident decisions.</p>
+    <p>We pride ourselves on our integrity, accuracy, and personalized approach. Our mission is to empower your financial future through strategic planning, sound advice, and excellent customer service.</p>
   </section>
-
   <footer>
     <p>&copy; 2025 BOSJ Enterprises. All rights reserved.</p>
   </footer>
